@@ -42,11 +42,22 @@ button::before{
 button:hover::before{
   height: 100% ;
 }
+@media all and (max-width: 800px)
+{
+  button{
+    font-size: 15px;
+  }
+}
 h1{
   color: #b31664;
   text-align: center;
   font-size: 64px;
-
+}
+@media all and (max-width: 800px)
+{
+  h1{
+    font-size: 30px;
+  }
 }
 h2{
   color: #b31664;

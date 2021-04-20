@@ -43,6 +43,12 @@ button::before{
 button:hover::before{
   height: 100% ;
 }
+@media all and (max-width: 800px)
+{
+  button{
+    font-size: 15px;
+  }
+}
 .wd{
 
 }
