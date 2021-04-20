@@ -1,0 +1,272 @@
+html{
+  background:linear-gradient(to bottom, #000, #000);
+}
+body{
+  margin: 0;
+  padding:0;
+}
+.container{
+  text-align: center;
+  margin: 5px;
+}
+button{
+  background: none;
+  border: 2.5px solid #b31664 ;
+  border-radius: 50%;
+  padding: 10px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  margin: 15px;
+  color: #b31664 ;
+  transition: 0.6s;
+  position: relative;
+  overflow: hidden;
+}
+button:hover{
+  color:#000;
+  border: 2.5px solid #000;
+}
+button::before{
+  content: "";
+  position: absolute;
+  left: 0 ;
+  width: 100% ;
+  height: 0% ;
+  background: #b31664 ;
+  z-index: -1;
+  transition: 0.6s;
+  top: 0;
+  border-radius: 50% ;
+
+}
+button:hover::before{
+  height: 100% ;
+}
+h1{
+  color: #b31664;
+  text-align: center;
+  font-size: 64px;
+
+}
+h2{
+  color: #b31664;
+  text-align: center;
+  font-size: 32px;
+  text-align: left;
+  margin-left:5% ;
+}
+/*.webdev{
+  text-align: center;
+}
+.bd{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.slider{
+width: 100%;
+border-radius: 10px;
+overflow: hidden;
+}
+.slides{
+  width: 800%;
+  display: flex;
+
+}
+.slides input{
+  display: none;
+}
+.slide{
+  width:12.5%;
+  transition: 0.5s;
+}
+
+.navigation-manual{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 960px;
+  }
+.manual-btn{
+  border:2px solid #b31664;
+  padding: 5px;
+  border-radius: 10px;
+  cursor:pointer;
+  transition: 1s;
+}
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+.manual-btn:hover{
+  background: #b31664;
+}
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -12.5%;
+}
+#radio3:checked ~ .first{
+  margin-left: -25%;
+}
+#radio4:checked ~ .first{
+  margin-left: -37.5%;
+}
+#radio5:checked ~ .first{
+  margin-left: -50%;
+}
+#radio6:checked ~ .first{
+  margin-left: -62.5%;
+}
+#radio7:checked ~ .first{
+  margin-left: -75%;
+}
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 960px;
+}
+.navigation-auto div{
+  border: 2px solid #b31664;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #b31664;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #b31664;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #b31664;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #b31664;
+}
+#radio5:checked ~ .navigation-auto .auto-btn2{
+  background: #b31664;
+}
+#radio6:checked ~ .navigation-auto .auto-btn3{
+  background: #b31664;
+}
+#radio7:checked ~ .navigation-auto .auto-btn4{
+  background: #b31664;
+}*/
+.bd{
+  margin: 0;
+  padding: 0;
+
+}
+.slider-frame{
+  overflow: hidden;
+  width:100%;
+  margin-top: 20px;
+}
+@-webkit-keyframes slide_animation{
+  0%{left:700%}
+  4.167%{left:700%}
+  8.34%{left:600%}
+  12.5%{left:600%}
+  16.67%{left:500%}
+  20.83%{left:500%}
+  25%{left:400%}
+  29.167%{left:400%}
+  33.34%{left:300%}
+  37.5%{left:300%}
+  41.67%{left:200%}
+  45.83%{left:200%}
+  50%{left:100%}
+  54.167%{left:100%}
+  58.34%{left:200%}
+  62.5%{left:200%}
+  66.67%{left:300%}
+  70.83%{left:300%}
+  75%{left:400%}
+  79.167%{left:400%}
+  83.34%{left:500%}
+  87.5%{left:500%}
+  91.67%{left:600%}
+  95.83%{left:600%}
+  100%{left:700%}
+}
+.slide-images{
+  width:800%;
+  margin-left: -700%;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration: 60s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -webkit-animation-playstate: running;
+}
+.img-container{
+  width: 12.5%;
+  position: relative;
+  float: left;
+}
+.ft{
+  background-color: #292929;
+}
+.ft h1{
+  text-align: left;
+  margin:20px;
+  color: #fff;
+}
+.whatsapp{
+  display: flex;
+  margin:10px;
+}
+.whatsapp img{
+  margin:20px;
+   width:60px;
+}
+.whatsapp h3{
+  font-size: 30px;
+  color: #fff;
+}
+.gmail{
+  display: flex;
+  margin:10px;
+}
+.gmail img{
+  margin:20px;
+   width:60px;
+}
+.gmail h3{
+  font-size: 30px;
+  color: #fff;
+}
+.discord{
+  display: flex;
+  margin:10px;
+}
+.discord img{
+  margin:20px;
+   width:60px;
+}
+.discord h3{
+  font-size: 30px;
+  color: #fff;
+}
+.fiver{
+  display: flex;
+  margin:10px;
+}
+.fiver img{
+  margin:20px;
+   width:60px;
+}
+.fiver h3{
+  font-size: 30px;
+  color: #fff;
+}
