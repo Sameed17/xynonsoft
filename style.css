@@ -46,6 +46,10 @@ button:hover::before{
 {
   button{
     font-size: 15px;
+    font-weight: bold;
+  }
+  .logo{
+    height: 250px;
   }
 }
 h1{

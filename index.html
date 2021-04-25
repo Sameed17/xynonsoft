@@ -15,11 +15,11 @@
           <button id="services-btn" >What do we do?</button>
           <a href="packages.html"> <button >Packages</button> </a>
           <a href="about-us.html"> <button >About Us</button> </a>
-          <a href="#"> <button >Contact Us</button> </a>
+          <button id="contact-btn" >Contact Us</button>
         </div>
       </header>
       <main >
-        <img width="100%" src="background1.png" alt="">
+        <img class="logo" width="100%" src="background1.png" alt="">
       <!--  <div class="webdev" >
           <h1>
             What Do We Do?
@@ -130,6 +130,7 @@
             </div>
           </div>
         </div>
+        <div id="contact"></div>
         <script type="text/javascript">
             var services = document.getElementById("services");
             var services_btn = document.getElementById("services-btn");
@@ -140,6 +141,16 @@
                 inline:'end'
               });
             });
+            var contact = document.getElementById("contact");
+            var contact_btn = document.getElementById("contact-btn");
+            contact_btn.addEventListener('click' , (ev)=> {
+              contact.scrollIntoView({
+                behavior:'smooth',
+                block:'start',
+                inline:'end'
+              });
+            });
+
         </script>
       </main>
       <footer>

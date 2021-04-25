@@ -47,6 +47,10 @@ button:hover::before{
 {
   button{
     font-size: 15px;
+    font-weight: bold;
+  }
+  .logo{
+    height: 250px;
   }
 }
 .wd{
@@ -113,6 +117,65 @@ button:hover::before{
   justify-content: flex-end;
 }
 .wdd div button:hover{
+  color:#f93;
+  border: 2.5px solid #f93;
+}
+.apd{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+@media all and (max-width: 800px)
+{
+  .apd{
+    display:flex;
+    flex-direction:column;
+  }
+}
+
+.apd h1{
+  color: #fff;
+  font-size: 40px;
+
+}
+.apd h2{
+  color: #b31664;
+  font-size: 50px;
+
+}
+.apd div{
+  width:33%;
+  background-color: #292929;
+  border-width: medium;
+  text-align: center;
+  margin:20px;
+}
+@media all and (max-width: 800px)
+{
+  .apd div{
+    width:95%;
+  }
+}
+.apd div p{
+  font-size: 24px;
+  color: #fff;
+}
+.apd div button{
+  background: none;
+  border: 2.5px solid #b31664 ;
+  border-radius: 50%;
+  padding: 10px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  margin: 15px;
+  color: #b31664 ;
+  transition: 0.6s;
+  position: relative;
+  overflow: hidden;
+  justify-content: flex-end;
+}
+.apd div button:hover{
   color:#f93;
   border: 2.5px solid #f93;
 }

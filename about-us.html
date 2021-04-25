@@ -14,11 +14,11 @@
           <a href="index.html"> <button >Home</button> </a>
           <a href="packages.html"> <button >Packages</button> </a>
           <a href="about-us.html"> <button >About Us</button> </a>
-          <a href="#"> <button >Contact Us</button> </a>
+          <button id="contact-btn">Contact Us</button>
         </div>
       </header>
       <main>
-        <img width="100%" src="background1.png" alt="">
+        <img class="logo" width="100%" src="background1.png" alt="">
         <div class="pic-bd">
           <img class="pic" src="about-us2.png" alt="">
           <h2 style="color:#b31664">
@@ -27,7 +27,18 @@
             We take care of our employees like one big family and invest in people development to realize their true potential. Our mission is to enable bussiness men to lead a happy life, grow their bussinesses and earn maximum profit utilising our quality sofwares.
           </h2>
         </div>
-
+        <div id="contact"></div>
+        <script type="text/javascript">
+          var contact = document.getElementById("contact");
+          var contact_btn = document.getElementById("contact-btn");
+          contact_btn.addEventListener('click' , (ev)=> {
+            contact.scrollIntoView({
+              behavior:'smooth',
+              block:'start',
+              inline:'end'
+            });
+          });
+        </script>
       </main>
       <footer>
           <div class="ft">
