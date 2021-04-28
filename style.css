@@ -89,7 +89,19 @@ overflow: hidden;
 @media all and (max-width: 800px)
 {
   .bd{
-    height: 250px;
+    flex-direction: column;
+    height: 2100px;
+  }
+  .slider{
+  flex-direction: column;
+  width: 100%;
+  border-radius: 10px;
+  overflow:visible;
+  }
+  .slides{
+    flex-direction: column;
+    width: 800%;
+    display: flex;
   }
 }
 .slides{
@@ -170,12 +182,39 @@ overflow: hidden;
 @media all and (max-width: 800px){
   .manual-btn{
     border:2px solid #333;
+    display: none;
   }
   .navigation-auto div{
     border: 2px solid #333;
+    display: none;
   }
   .navigation-auto{
     margin-top: 200px;
+    display: none;
+  }
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  #radio2:checked ~ .first{
+    margin-left: 0;
+  }
+  #radio3:checked ~ .first{
+    margin-left: 0;
+  }
+  #radio4:checked ~ .first{
+    margin-left: 0;
+  }
+  #radio5:checked ~ .first{
+    margin-left: 0;
+  }
+  #radio6:checked ~ .first{
+    margin-left: 0;
+  }
+  #radio7:checked ~ .first{
+    margin-left: 0;
+  }
+  #radio8:checked ~ .first{
+    margin-left: 0;
   }
 }
 .navigation-auto div:not(:last-child){
