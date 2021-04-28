@@ -86,11 +86,17 @@ width: 100%;
 border-radius: 10px;
 overflow: hidden;
 }
+@media all and (max-width: 800px)
+{
+  .bd{
+    height: 250px;
+  }
+}
 .slides{
   width: 800%;
   display: flex;
-
 }
+
 .slides input{
   display: none;
 }
