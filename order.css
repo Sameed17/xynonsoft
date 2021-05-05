@@ -52,7 +52,23 @@ button:hover::before{
     height: 250px;
   }
 }
-
+.container input{
+  background-color: #292929;
+  border: 5px solid #b31664;
+  margin: 40px;
+  padding: 10px 20px;
+  font-size: 30px;
+  color: #b31664;
+}
+@media all and (max-width: 800px)
+{
+  .container input{
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
 .ft{
   background-color: #292929;
 }
