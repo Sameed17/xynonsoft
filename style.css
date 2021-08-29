@@ -94,7 +94,7 @@ overflow: hidden;
 {
   .bd{
     flex-direction: column;
-    height: 2000px;
+    height: 1950px;
   }
   .slider{
   flex-direction: column;
