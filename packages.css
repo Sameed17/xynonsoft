@@ -183,54 +183,38 @@ button:hover::before{
   background-color: #292929;
 }
 .ft h1{
+  text-align: left;
   margin:20px;
   color: #fff;
 }
-.whatsapp{
+.ft div{
   display: flex;
   margin:10px;
 }
-.whatsapp img{
+.ft div img{
   margin:20px;
-   width:60px;
+  width:60px;
 }
-.whatsapp h3{
+.ft div h3{
   font-size: 30px;
   color: #fff;
 }
-.gmail{
-  display: flex;
-  margin:10px;
-}
-.gmail img{
-  margin:20px;
-   width:60px;
-}
-.gmail h3{
-  font-size: 30px;
-  color: #fff;
-}
-.discord{
-  display: flex;
-  margin:10px;
-}
-.discord img{
-  margin:20px;
-   width:60px;
-}
-.discord h3{
-  font-size: 30px;
-  color: #fff;
-}
-.fiver{
-  display: flex;
-  margin:10px;
-}
-.fiver img{
-  margin:20px;
-   width:60px;
-}
-.fiver h3{
-  font-size: 30px;
-  color: #fff;
+@media all and (max-width: 800px){
+  .ft h1{
+    text-align: left;
+    margin:20px;
+  }
+  .ft div{
+    display: flex;
+    margin:10px;
+  }
+  .ft div img{
+    margin:15px;
+    width:32px;
+    height: 32px;
+  }
+  .ft div h3{
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
 }
