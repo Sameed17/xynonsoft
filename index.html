@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>
+        Xynon Soft
+      </title>
+    </head>
+    <body>
+      <header>
+        <div class="container">
+          <a href="index.html"> <button >Home</button> </a>
+          <button id="services-btn" >What do we do?</button>
+          <a href="packages.html"> <button >Packages</button> </a>
+          <a href="about-us.html"> <button >About Us</button> </a>
+          <button id="contact-btn" >Contact Us</button>
+        </div>
+      </header>
+      <main>
+        <img class="logo" width="100%" src="background1.svg" alt="">
+        <div class="webdev">
+          <h1>
+            What Do We Do?
+          </h1>
+          <!--<div class="">
+            <h2>
+              1. Web Development :-
+            </h2>
+            <img  src="webdev.jpg" alt="" width="100%">
+          </div>
+          <div class="">
+            <h2>
+              2. Social Media Markiting :-
+            </h2>
+            <img src="smm.png" alt="" width="100%">
+          </div>
+        </div>-->
+        <div class="bd" id="services">
+          <div class="slider">
+            <div class="slides">
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">
+              <input type="radio" name="radio-btn" id="radio5">
+              <input type="radio" name="radio-btn" id="radio6">
+              <input type="radio" name="radio-btn" id="radio7">
+              <input type="radio" name="radio-btn" id="radio8">
+              <div class="slide first">
+                <img width="100%" src="webdev.svg" alt="">
+              </div>
+              <div class="slide">
+                <img width="100%" src="smm.svg" alt="">
+              </div>
+              <div class="slide">
+                <img width="100%" src="adev.svg" alt="android development">
+              </div>
+              <div class="slide">
+                <img width="100%" src="logo-design.svg" alt="graphic/logo design">
+              </div>
+              <div class="slide">
+                <img width="100%" src="game-dev.svg" alt="game development">
+              </div>
+              <div class="slide">
+                <img width="100%" src="video.svg" alt="video editing">
+              </div>
+              <div class="slide">
+                <img width="100%" src="animation.svg" alt="animation">
+              </div>
+              <div class="slide">
+                <img id="accsoft" width="100%" src="acsoft.svg" alt="accounting software">
+              </div>
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+                <div class="auto-btn6"></div>
+                <div class="auto-btn7"></div>
+                <div class="auto-btn8"></div>
+              </div>
+              <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+                <label for="radio6" class="manual-btn"></label>
+                <label for="radio7" class="manual-btn"></label>
+                <label for="radio8" class="manual-btn"></label>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">
+            var radio1 = document.getElementById('radio1');
+            var radio2 = document.getElementById('radio2');
+            var radio3 = document.getElementById('radio3');
+            var radio4 = document.getElementById('radio4');
+            var radio5 = document.getElementById('radio5');
+            var radio6 = document.getElementById('radio6');
+            var radio7 = document.getElementById('radio7');
+            var radio8 = document.getElementById('radio8');
+
+            var counter = 1;
+            setInterval(function(){
+              document.getElementById('radio' + counter).checked = true;
+              counter++;
+              if (counter > 8) {
+                counter=1;
+              }
+            } , 5000);
+            radio1.addEventListener('click' , (ev)=> {counter = 1;});
+            radio2.addEventListener('click' , (ev)=> {counter = 2;});
+            radio3.addEventListener('click' , (ev)=> {counter = 3;});
+            radio4.addEventListener('click' , (ev)=> {counter = 4;});
+            radio5.addEventListener('click' , (ev)=> {counter = 5;});
+            radio6.addEventListener('click' , (ev)=> {counter = 6;});
+            radio7.addEventListener('click' , (ev)=> {counter = 7;});
+            radio8.addEventListener('click' , (ev)=> {counter = 8;});
+          </script>
+        </div>
+        <!--<h1 >
+          What Do We Do?
+        </h1>
+        <div class="bd" id="services">
+          <div class="slider-frame">
+            <div class="slide-images">
+              <div class="img-container">
+                <img width="100%" src="webdev.png" alt="">
+              </div>
+              <div class="img-container">
+                <img width="100%" src="smm.png" alt="">
+              </div>
+              <div class="img-container">
+                <img width="100%" src="adev.png" alt="">
+              </div>
+              <div class="img-container">
+                <img width="100%" src="logo-design.jpg" alt="">
+              </div>
+              <div class="img-container">
+                <img width="100%" src="game-dev.png" alt="">
+              </div>
+              <div class="img-container">
+                <img width="100%" src="video.jfif" alt="">
+              </div>
+              <div class="img-container">
+                <img width="100%" src="animation.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>-->
+        <div id="contact"></div>
+        <script type="text/javascript">
+            var services = document.getElementById("services");
+            var services_btn = document.getElementById("services-btn");
+            services_btn.addEventListener('click' , (ev)=> {
+              services.scrollIntoView({
+                behavior:'smooth',
+                block:'start',
+                inline:'end'
+              });
+            });
+            var contact = document.getElementById("contact");
+            var contact_btn = document.getElementById("contact-btn");
+            contact_btn.addEventListener('click' , (ev)=> {
+              contact.scrollIntoView({
+                behavior:'smooth',
+                block:'start',
+                inline:'end'
+              });
+            });
+
+        </script>
+      </main>
+      <footer>
+        <div class="ft">
+            <h1>
+              Contact Us:-
+            </h1>
+            <div>
+              <img src="whatsapp.svg" alt="">
+              <h3>
+                +92 300 8667052
+              </h3>
+            </div>
+            <div>
+              <img src="gmail.svg" alt="">
+              <h3>
+                sameedkhan117@gmail.com
+              </h3>
+            </div>
+            <div>
+              <img src="discord.svg" alt="">
+              <h3>
+                sameed#6104
+              </h3>
+            </div>
+            <div>
+              <img src="fiver.svg" alt="">
+              <h3>
+                sameed17
+              </h3>
+            </div>
+        </div>
+      </footer>
+    </body>
+</html>

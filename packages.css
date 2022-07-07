@@ -1,0 +1,220 @@
+html{
+  background:linear-gradient(to bottom, #000, #000);
+}
+body{
+  margin: 0;
+  padding:0;
+
+}
+.container{
+  text-align: center;
+  margin: 5px;
+}
+button{
+  background: none;
+  border: 2.5px solid #b31664 ;
+  border-radius: 50%;
+  padding: 10px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  margin: 15px;
+  color: #b31664 ;
+  transition: 0.6s;
+  position: relative;
+  overflow: hidden;
+}
+button:hover{
+  color:#000;
+  border: 2.5px solid #000;
+}
+button::before{
+  content: "";
+  position: absolute;
+  left: 0 ;
+  width: 100% ;
+  height: 0% ;
+  background: #b31664 ;
+  z-index: -1;
+  transition: 0.6s;
+  top: 0;
+  border-radius: 50% ;
+
+}
+button:hover::before{
+  height: 100% ;
+}
+@media all and (max-width: 800px)
+{
+  button{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .logo{
+    height: 250px;
+  }
+}
+.wd{
+
+}
+.wd h1{
+  color: #b31664;
+  font-size: 40px;
+
+}
+.wdd{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+@media all and (max-width: 800px)
+{
+  .wdd{
+    display:flex;
+    flex-direction:column;
+  }
+}
+
+.wdd h1{
+  color: #fff;
+  font-size: 40px;
+
+}
+.wdd h2{
+  color: #b31664;
+  font-size: 50px;
+
+}
+.wdd div{
+  width:33%;
+  background-color: #292929;
+  border-width: medium;
+  text-align: center;
+  margin:20px;
+}
+@media all and (max-width: 800px)
+{
+  .wdd div{
+    width:95%;
+  }
+}
+.wdd div p{
+  font-size: 24px;
+  color: #fff;
+}
+.wdd div button{
+  background: none;
+  border: 2.5px solid #b31664 ;
+  border-radius: 50%;
+  padding: 10px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  margin: 15px;
+  color: #b31664 ;
+  transition: 0.6s;
+  position: relative;
+  overflow: hidden;
+  justify-content: flex-end;
+}
+.wdd div button:hover{
+  color:#f93;
+  border: 2.5px solid #f93;
+}
+.apd{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+@media all and (max-width: 800px)
+{
+  .apd{
+    display:flex;
+    flex-direction:column;
+  }
+}
+
+.apd h1{
+  color: #fff;
+  font-size: 40px;
+
+}
+.apd h2{
+  color: #b31664;
+  font-size: 50px;
+
+}
+.apd div{
+  width:33%;
+  background-color: #292929;
+  border-width: medium;
+  text-align: center;
+  margin:20px;
+}
+@media all and (max-width: 800px)
+{
+  .apd div{
+    width:95%;
+  }
+}
+.apd div p{
+  font-size: 24px;
+  color: #fff;
+}
+.apd div button{
+  background: none;
+  border: 2.5px solid #b31664 ;
+  border-radius: 50%;
+  padding: 10px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  margin: 15px;
+  color: #b31664 ;
+  transition: 0.6s;
+  position: relative;
+  overflow: hidden;
+  justify-content: flex-end;
+}
+.apd div button:hover{
+  color:#f93;
+  border: 2.5px solid #f93;
+}
+.ft{
+  background-color: #292929;
+}
+.ft h1{
+  text-align: left;
+  margin:20px;
+  color: #fff;
+}
+.ft div{
+  display: flex;
+  margin:10px;
+}
+.ft div img{
+  margin:20px;
+  width:60px;
+}
+.ft div h3{
+  font-size: 30px;
+  color: #fff;
+}
+@media all and (max-width: 800px){
+  .ft h1{
+    text-align: left;
+    margin:20px;
+  }
+  .ft div{
+    display: flex;
+    margin:10px;
+  }
+  .ft div img{
+    margin:15px;
+    width:32px;
+    height: 32px;
+  }
+  .ft div h3{
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+}
